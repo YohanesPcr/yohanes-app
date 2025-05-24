@@ -23,6 +23,8 @@ const Forgot = React.lazy(() =>import("./pages/auth/Forgot"))
 const AuthLayout = React.lazy(() =>import("./layouts/AuthLayout"))
 const Orders = React.lazy(() =>import("./pages/Orders"))
 const Dashboard = React.lazy(() => import("./pages/Dashboard"))
+const HeroSection = React.lazy(() => import("./GuestLayout/pages/HeroSection"));
+
 function App() {
   return (
     <Suspense fallback={<Loading />}>
@@ -41,6 +43,8 @@ function App() {
             <Route path="/register" element={<Register/>} />
             <Route path="/forgot" element={<Forgot/>} />
         </Route>
+        <Route path="/herosection" element={<HeroSection />} /> {/* Tambahkan ini */}
+          
     </Routes>
     </Suspense>
   );
