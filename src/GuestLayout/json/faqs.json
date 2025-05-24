@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Apakah Makanyan menyediakan dukungan pelanggan?",
+    "answer": "Ya, kami menyediakan dukungan melalui email dan chat setiap hari. Tim kami siap membantu terkait resep, artikel kuliner, atau masalah teknis di website."
+  },
+  {
+    "id": 2,
+    "question": "Bagaimana cara memperbarui profil pengguna saya?",
+    "answer": "Kamu bisa memperbarui data profil di halaman 'Pengaturan Akun', lalu klik 'Edit Profil' dan simpan perubahanmu."
+  },
+  {
+    "id": 3,
+    "question": "Bisakah saya mengirimkan resep makanan sendiri?",
+    "answer": "Tentu! Kami sangat menghargai kontribusi resep dari pengguna. Gunakan fitur 'Kirim Resep' di halaman utama."
+  },
+  {
+    "id": 4,
+    "question": "Apa saja manfaat mengikuti Makanyan?",
+    "answer": "Kamu akan mendapatkan inspirasi resep harian, tips memasak dari chef profesional, serta akses ke komunitas pecinta kuliner."
+  },
+  {
+    "id": 5,
+    "question": "Apakah Makanyan menjual produk makanan juga?",
+    "answer": "Saat ini kami fokus pada konten resep dan artikel kuliner. Tapi nantikan fitur e-commerce kami yang akan datang!"
+  },
+  {
+    "id": 6,
+    "question": "Bagaimana cara mendaftar newsletter resep harian?",
+    "answer": "Masukkan email kamu di kolom berlangganan pada bagian bawah halaman. Kami akan mengirimkan resep terbaru langsung ke inbox-mu."
+  }
+]
