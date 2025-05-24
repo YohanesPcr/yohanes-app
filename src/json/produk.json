@@ -1,0 +1,20 @@
+[
+  {
+    "kode": "P001",
+    "nama": "Ayam Goreng Krispi",
+    "tersedia": true,
+    "harga": 25000
+  },
+  {
+    "kode": "P002",
+    "nama": "Nasi Goreng Spesial",
+    "tersedia": false,
+    "harga": 20000
+  },
+  {
+    "kode": "P003",
+    "nama": "Mie Ayam Bakso",
+    "tersedia": true,
+    "harga": 18000
+  }
+]
