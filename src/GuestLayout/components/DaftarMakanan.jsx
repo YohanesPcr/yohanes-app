@@ -1,6 +1,8 @@
 'use client';
 import { useState, useEffect } from 'react';
-import hargaMakanan from '../json/DaftarMakanan.json';
+import hargaMakanan from '@json/daftarMakanan.json';
+
+
 
 const kategoriList = ['Semua', 'Makanan Berat', 'Minuman', 'Cemilan', 'Dessert'];
 

@@ -1,7 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 
-import menuFavorit from '../json/menuFavorit.json'; // Ganti ke nama variabel sesuai keinginan
+import menuFavorit from '@json/menuFavorit.json'; // Ganti ke nama variabel sesuai keinginan
 
 export default function MenuFavorit() {
   const [categoryCards, setCategoryCards] = useState([]);

@@ -1,5 +1,5 @@
 import heroImg from "../assets/makanan.jpg";
-import makananData from "../json/topDishes.json";
+import makananData from "@json/topDishes.json";
 
 export default function HeroMakanan() {
   return (

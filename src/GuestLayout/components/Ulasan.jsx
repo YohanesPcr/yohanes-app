@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ulasanPengguna from "../json/ulasanPengguna.json";
+import ulasanPengguna from "@json/ulasanPengguna.json";
 
 export default function Ulasan() {
   const [halaman, setHalaman] = useState(0); // 0 untuk halaman pertama

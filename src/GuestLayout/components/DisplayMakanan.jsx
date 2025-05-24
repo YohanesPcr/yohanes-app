@@ -1,5 +1,5 @@
 import { useState } from "react";
-import dataMakanan from "../json/dataMakanan"; // Pastikan data ini sudah sesuai
+import dataMakanan from "@json/dataMakanan"; // Pastikan data ini sudah sesuai
 
 export default function DisplayMakanan() {
   const [start, setStart] = useState(0);
