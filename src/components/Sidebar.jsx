@@ -1,16 +1,18 @@
-import { FaUserAlt } from "react-icons/fa";
+import { AiOutlineHome } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { MdDashboard } from "react-icons/md";
+import { MdDashboard, MdFastfood } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
+
 export default function Sidebar() {
-    const menuClass = ({ isActive }) =>
-        `flex cursor-pointer items-center rounded-xl p-4  space-x-2
-        ${isActive ? 
-            "text-hijau bg-green-200 font-extrabold" : 
-            "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
-        }`
-    return (
-    
+  const menuClass = ({ isActive }) =>
+    `flex cursor-pointer items-center rounded-xl p-4  space-x-2
+        ${
+          isActive
+            ? "text-hijau bg-green-200 font-extrabold"
+            : "text-gray-600 hover:text-hijau hover:bg-green-200 hover:font-extrabold"
+        }`;
+  return (
     <div
       id="sidebar"
       className="flex min-h-screen w-90 flex-col bg-white p-10 shadow-lg"
@@ -21,15 +23,12 @@ export default function Sidebar() {
           id="logo-title"
           className="font-poppins-extrabold text-[48px] text-gray-900"
         >
-          Sodap{" "}
+          Sedap{" "}
           <b id="logo-dot" className="text-hijau">
             .
           </b>
         </span>
-        <span
-          id="logo-subtitle"
-          className="font-barlow font-semibold text-gray-400"
-        >
+        <span id="logo-subtitle" className="font-semibold text-gray-400">
           Modern Admin Dashboard
         </span>
       </div>
@@ -38,33 +37,33 @@ export default function Sidebar() {
       <div id="sidebar-menu" className="mt-10">
         <ul id="menu-list" className="space-y-3">
           <li>
-            <NavLink
-              id="menu-1"
-              to="/"
-              className={menuClass}
-            >
-              <MdDashboard className="mr-4 text-x1" />
+            <NavLink id="menu-1" to="/" className={menuClass}>
+              <MdDashboard className="mr-4 text-xl" />
               <span>Dashboard</span>
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-2"
-              to="/orders"
-              className={menuClass}
-            >
+            <NavLink id="menu-4" to="/products" className={menuClass}>
+              <MdFastfood className="mr-4 text-xl" />
+              Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-2" to="/orders" className={menuClass}>
               <AiOutlineShoppingCart className="mr-4 text-xl" />
               <span>Orders</span>
             </NavLink>
           </li>
           <li>
-            <NavLink
-              id="menu-3"
-              to="/customers"
-              className={menuClass}
-            >
-              <FaUserAlt className="mr-4 text-x1" />
+            <NavLink id="menu-3" to="/customers" className={menuClass}>
+              <AiOutlineUser className="mr-4 text-xl" />
               <span>Customers</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink id="menu-3" to="/guest" className={menuClass}>
+              <AiOutlineHome className="mr-4 text-xl" />
+              <span>Guest Page</span>
             </NavLink>
           </li>
         </ul>

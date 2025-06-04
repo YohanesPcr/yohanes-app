@@ -2,6 +2,7 @@ import React, { Suspense } from "react";
 import "./assets/tailwind.css";
 import { Routes, Route } from "react-router-dom";
 import Loading from "./components/Loading";
+// import Products from "./pages/Products";
 // import Dashboard from "./pages/Dashboard";
 // import Orders from "./pages/Orders";
 // import Customers from "./pages/Customers";
@@ -23,6 +24,7 @@ const Forgot = React.lazy(() =>import("./pages/auth/Forgot"))
 const AuthLayout = React.lazy(() =>import("./layouts/AuthLayout"))
 const Orders = React.lazy(() =>import("./pages/Orders"))
 const Dashboard = React.lazy(() => import("./pages/Dashboard"))
+const Products = React.lazy(() => import("./pages/Products"))
 const HeroSection = React.lazy(() => import("./GuestLayout/pages/HeroSection")); 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/customers" element={<Customers />} />
+        	<Route path="products" element={<Products />} />
         <Route path="*" element={<NotFound />} />
       </Route>
 
