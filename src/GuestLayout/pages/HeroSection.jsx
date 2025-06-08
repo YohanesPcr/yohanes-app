@@ -8,11 +8,16 @@ import DaftarMakanan from '../components/DaftarMakanan';
 import HeroMakanan from '../components/HeroMakanan';
 
 import Ulasan from '../components/Ulasan';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 
 export default function HeroSection() {
   return (
     <>
-      <section className="relative bg-[#fff7f1] py-20">
+      <Navbar />
+   <section className="relative bg-[#fff7f1] py-20 mt-24">
+
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 items-center px-6 md:px-12">
           {/* Kiri */}
           <div className="space-y-6">
@@ -85,10 +90,11 @@ export default function HeroSection() {
 
       {/* Tambahan Section */}
       <DisplayMakanan />
-      <MenuFavorit/>
-      <DaftarMakanan/>
-      <HeroMakanan/>
-      <Ulasan/>
+      <MenuFavorit />
+      <DaftarMakanan />
+      <HeroMakanan />
+      <Ulasan />
+      <Footer/>
     </>
   );
 }
