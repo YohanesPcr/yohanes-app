@@ -1,3 +1,4 @@
+import { CgNotes } from "react-icons/cg"; 
 import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineShoppingCart } from "react-icons/ai";
@@ -64,6 +65,12 @@ export default function Sidebar() {
             <NavLink id="menu-3" to="/guest" className={menuClass}>
               <AiOutlineHome className="mr-4 text-xl" />
               <span>Guest Page</span>
+            </NavLink>
+          </li>
+           <li>
+            <NavLink id="menu-3" to="/notes" className={menuClass}>
+              <CgNotes className="mr-4 text-xl" />
+              <span>Notes</span>
             </NavLink>
           </li>
         </ul>
